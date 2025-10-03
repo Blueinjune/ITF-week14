@@ -1,0 +1,14 @@
+nav {
+    background-color: rgb(88, 168, 243);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+}
