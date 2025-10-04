@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>ITFHub</title>
+</head>
+<body>
+  <nav>
+    <p>68070061</p>
+    <h2>ITFHub Website</h2>
+    <p>Week 14</p>
+  </nav>
+  <div class="heading">
+    <h3><marquee direction="left">IT BANKOKDYNAMO</marquee></h3>
+    <h3>Welcome to BANKOKDYNAMO – Best bank for you</h3>
+  </div>
+
+  <textarea id="log" readonly>1, Current account balance: 1000, Current cash balance: 1000</textarea>
+ 
+  <div class="container">
+    <div class="panel">
+      <h3>Account Overview</h3>
+
+      <section>
+        <p><img src="2596477.png" class="icon"> <b>Account Information</b></p>
+        <p>Name: Thanawit Wanthong</p>
+        <p>Type: Savings Account</p>
+      </section>
+
+      <section>
+        <p><img src="money.png" class="icon"> <b>Balance Information</b></p>
+        <p>Current account balance: <input type="text" id="account" value="1000"></p>
+        <p>Current cash balance: <input type="text" id="cash" value="1000"></p>
+        <button onclick="updateBalance()">Change</button>
+      </section>
+
+      <section>
+        <p><img src="bank.png" class="icon"> <b>Bank Operation</b></p>
+        <select id="operation">
+          <option value="deposit">Deposit</option>
+          <option value="withdraw">Withdraw</option>
+        </select>
+        <input type="number" id="amount" value="1">
+        <button onclick="process()">Proceed</button>
+      </section>
+    </div>
+
+    <div class="panel">
+      <h3>Financial Tools</h3>
+
+      <section>
+        <p><img src="cripto.png" class="icon"> <b>Currency Converter</b></p>
+        <p>Input balance: <input type="number" id="inputBalance" value="0"></p>
+        <p>Output balance: <input type="text" id="outputBalance" value="0" readonly></p>
+        <p>Input currency:
+          <select id="currency">
+            <option value="USD">USD</option>
+            <option value="THB">THB</option>
+          </select>
+          <button>Convert</button>
+        </p>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

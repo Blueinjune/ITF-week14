@@ -1,24 +1,69 @@
-nav {
-    background-color: rgb(88, 168, 243);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: aliceblue;
 }
 
-body {
-    margin: 0;
+
+nav {
+  background-color: rgb(88, 168, 243);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .heading {
-    text-align: center;
+  text-align: center;
+  margin: 20px 0;
 }
 
-.menu {
-    font-size: 25px;
+textarea {
+  display: block;
+  background-color: beige;
+  width: 90%;
+  height: 200px;
+  margin: 0 auto 30px auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.panel {
+  width: 45%;
+  background-color: blanchedalmond;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .icon {
-    max-width: 10%;
-    height: 10%;
-    border-radius: 50%;
+  width: 40px;
+  vertical-align: middle;
+  margin-right: 8px;
+  border-radius: 8px;
+}
+
+input, select {
+  margin-left: 5px;
+  padding: 4px;
+}
+
+button {
+  padding: 5px 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(88,168,243);
+  color: white;
+  border: none;
 }
